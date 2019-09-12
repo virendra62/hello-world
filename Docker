@@ -1,0 +1,4 @@
+EXPOSE 8080
+COPY ./target/testdemo-webapp-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapp
+
+CMD ["catalina.sh","run"]
