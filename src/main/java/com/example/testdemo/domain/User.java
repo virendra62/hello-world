@@ -19,16 +19,14 @@ public class User implements Serializable {
     private String firstName;
     private String lastName;
     private int age;
-    private long mobile;	
 
     public User() {
     }
 
-    public User(String firstName, String lastName, int agen, long mobile) {
+    public User(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.mobile = mobile;
     }
 
     // getters and setters: ~30 extra lines of code

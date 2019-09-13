@@ -27,6 +27,13 @@ public class EmployeeController {
         return list;
     }
 
+/*    @RequestMapping("/openEmployeeView")
+    public ModelAndView openEmployeeAddView() {
+        ModelAndView mav = new ModelAndView("employeesAdd");
+        mav.addObject("employee", new Employee());
+        return mav;
+    }*/
+
     @PostMapping("/save")
     public ResponseEntity  save(@ModelAttribute("employee") Employee employeeObj) {
         ModelAndView mav = new ModelAndView("employeesList");
